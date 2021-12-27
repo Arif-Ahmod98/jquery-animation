@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git tutorial</title>
+    <style>
+      h1 {
+        font-size: 38px;
+        background-color: red;
+        color: white;
+        padding: 20px 0px;
+        text-align: center;
+        margin: 0px;
+        cursor: pointer;
+      }
+      p {
+        font-size: 22px;
+        color: white;
+        background-color: rgb(15, 136, 136);
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates excepturi quia beatae, ut nihil ipsa eveniet dignissimos fugiat
+      odio. Sequi.
+    </p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("h1").click(function () {
+          $("p").slideToggle("slow");
+          $("p").css({
+            color: "blue",
+            backgroundColor: "pink",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
