@@ -43,9 +43,11 @@
       $(document).ready(function () {
         $("button").click(function () {
           $("p").slideToggle(1000);
-          $("span").fadeToggle(1500);
+          $("span").fadeIn(1500);
         });
       });
+      let userName = prompt("Enter your name :");
+      alert("Welcome " + userName);
     </script>
   </body>
 </html>
