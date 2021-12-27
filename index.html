@@ -37,17 +37,20 @@
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates excepturi quia beatae, ut nihil ipsa eveniet dignissimos fugiat
       odio. Sequi.
     </p>
-    <span>Warning !</span>
+    <input type="text" placeholder="Enter your name :" id="form1" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
       $(document).ready(function () {
         $("button").click(function () {
           $("p").slideToggle(1000);
-          $("span").fadeIn(1500);
+          let username = prompt("Enter your name :");
+          if (username == "arif") {
+            console.log("Hello " + username);
+          } else {
+            console.log("Welcome " + username);
+          }
         });
       });
-      let userName = prompt("Enter your name :");
-      alert("Welcome " + userName);
     </script>
   </body>
 </html>
